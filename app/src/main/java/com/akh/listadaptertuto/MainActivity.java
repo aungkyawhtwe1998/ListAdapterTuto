@@ -3,6 +3,7 @@ package com.akh.listadaptertuto;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -39,5 +40,11 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(),i+","+value,Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d(this.getLocalClassName(), "onDestroy: "+"Event");
     }
 }
