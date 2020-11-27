@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ListAdapterTuto</string>
+    <string-array name="programming">
+        <item> Java</item>
+        <item>Kotlin</item>
+        <item>Dart</item>
+        <item>C#</item>
+        <item>PHP</item>
+        <item>Ruby</item>
+        <item>Python</item>
+    </string-array>
+</resources>
